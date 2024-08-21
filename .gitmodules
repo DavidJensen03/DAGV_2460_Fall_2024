@@ -1,3 +1,11 @@
 [submodule "Test_project\\Assets\\Tools"]
 	path = Test_project\\Assets\\Tools
+<<<<<<< Updated upstream
 	url = https://github.com/DavidJensen03/Tools
+=======
+<<<<<<< HEAD
+	url = git@github.com:DavidJensen03/Tools.git
+=======
+	url = https://github.com/DavidJensen03/Tools
+>>>>>>> origin/main
+>>>>>>> Stashed changes
