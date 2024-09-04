@@ -5830,6 +5830,7 @@ GameObject:
   - component: {fileID: 1459907628}
   - component: {fileID: 1459907627}
   - component: {fileID: 1459907631}
+  - component: {fileID: 1459907632}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5946,7 +5947,7 @@ Transform:
   m_GameObject: {fileID: 1459907626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 0, z: 0}
+  m_LocalPosition: {x: -1.49, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6010,6 +6011,74 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1459907632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459907626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d6fb3fe46f323489ce4a4f51af6bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  challangeBehaviour1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1459907632}
+        m_TargetAssemblyTypeName: ChallengeCallBehaviour, Assembly-CSharp
+        m_MethodName: changeToRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1459907632}
+        m_TargetAssemblyTypeName: ChallengeCallBehaviour, Assembly-CSharp
+        m_MethodName: changeSize
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  challangeBehaviour2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1459907632}
+        m_TargetAssemblyTypeName: ChallengeCallBehaviour, Assembly-CSharp
+        m_MethodName: changeTowhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1459907632}
+        m_TargetAssemblyTypeName: ChallengeCallBehaviour, Assembly-CSharp
+        m_MethodName: changeSize
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  curColor: {fileID: 0}
+  PlayerRB: {fileID: 0}
 --- !u!1 &1590553342
 GameObject:
   m_ObjectHideFlags: 0
