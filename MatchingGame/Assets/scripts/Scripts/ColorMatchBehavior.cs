@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class ColorMatchBehavior : MatchingBehavior
 {
-    public ColorIdDataList colorIDDataLisstObj;
-
+    public ColorIdDataList colorIDDataListObj;
+   
     private void Awake()
     {
-        iDobj = colorIDDataLisstObj.curremtColor;
+        IdObj = colorIDDataListObj.currentColor;
     }
 
     public void changeColor(SpriteRenderer renderer)
     {
-        var newColor = iDobj as colorID;
+        var newColor = IdObj as colorID;
         renderer.color = newColor.value;
-
 
     }
 }

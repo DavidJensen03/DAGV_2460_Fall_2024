@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class IDContainerBehavior : MonoBehaviour
 {
-    public colorID iDobj;
+    public colorID IdObj;
     public UnityEvent startEvent;
     public void Start()
     {

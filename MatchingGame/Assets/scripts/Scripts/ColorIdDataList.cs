@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 [CreateAssetMenu]
 public class ColorIdDataList : ScriptableObject
 {
-    public List<colorID> colorIdList;
-    public colorID curremtColor;
+    public List<colorID> colorIDList;
+
+    public colorID currentColor;
 
     private int num;
-    public void SetCurremtColorRandomly()
+
+    public void SetCurrentColorRandomly()
     {
-        num = colorIdList.Count - 1;
-        curremtColor = colorIdList[num];
+        num = Random.Range(0, 3);
+        currentColor = colorIDList[num];
+        Debug.Log(num);
     }
 }

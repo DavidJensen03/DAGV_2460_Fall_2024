@@ -1,11 +1,12 @@
+using Unity.Jobs;
 using UnityEngine;
 
 public class ColorIdBehavior : IDContainerBehavior
 {
-    public ColorIdDataList colorIDDataLisstObj;
+    public ColorIdDataList colorIDDataListObj;
 
     private void Awake()
     {
-        iDobj = colorIDDataLisstObj.curremtColor;
+        IdObj = colorIDDataListObj.currentColor;
     }
 }

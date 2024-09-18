@@ -4,15 +4,15 @@ using UnityEngine.Events;
 
 public class MatchingBehavior : MonoBehaviour   
 {
-    public ID iDobj;
+    public ID IdObj;
     public UnityEvent matchingEvent, noMatchingEvent, nomMatchDelayEvent;
     private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempID = other.GetComponent<IDContainerBehavior>();
         if (tempID == null)
             yield break;    
-        var otherID = tempID.iDobj;
-        if (otherID == iDobj)
+        var otherID = tempID.IdObj;
+        if (otherID == IdObj)
         {
             matchingEvent.Invoke();
         }

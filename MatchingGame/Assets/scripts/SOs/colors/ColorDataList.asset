@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6124bea4bf765d24299f5b5ee730f0f4, type: 3}
   m_Name: ColorDataList
   m_EditorClassIdentifier: 
-  colorIdList:
+  colorIDList:
   - {fileID: 11400000, guid: 6f0fb599bd3ad6445a1ca05568b4c99d, type: 2}
   - {fileID: 11400000, guid: 19f0063c7d7eb0c4aabf2571165e8dee, type: 2}
   - {fileID: 11400000, guid: 21ff80cc2ef10ae45adb6a0cb815905b, type: 2}
-  curremtColor: {fileID: 11400000, guid: 21ff80cc2ef10ae45adb6a0cb815905b, type: 2}
+  currentColor: {fileID: 11400000, guid: 6f0fb599bd3ad6445a1ca05568b4c99d, type: 2}
