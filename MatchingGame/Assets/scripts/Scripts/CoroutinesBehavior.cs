@@ -7,12 +7,18 @@ public class CoroutinesBehavior : MonoBehaviour
 
     public UnityEvent StartEvent, StartCountEvent, RepeatingCountEvent, EndCountEvent, repeatUntellFalseEvent;
     public intData counterNum;
-    public bool canRun;
+    private bool canRun;
 
     public float seconds = 3.0f;
 
     private WaitForSeconds WaitSecObject;
     private WaitForFixedUpdate WaitFixedObject;
+
+    public bool CanRun 
+    { 
+      get => canRun; 
+      set => canRun = value; 
+    }
 
     private void Start()
     {
