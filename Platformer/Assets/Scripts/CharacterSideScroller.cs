@@ -23,9 +23,7 @@ public class CharacterSideScroller : MonoBehaviour
         // Horizontal movement
         var moveInput = Input.GetAxis("Horizontal");
         var moveDirection = new Vector3(moveInput, 0f, 0f) * moveSpeed;
-        
-        
-        // Apply gravity
+     
         if (!controller.isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
