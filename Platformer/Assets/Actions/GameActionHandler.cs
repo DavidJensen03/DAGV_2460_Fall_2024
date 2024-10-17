@@ -9,7 +9,7 @@ public class GameActionHandler : MonoBehaviour
 
     private void Start()
     {
-        gameActionObj.raise += Raise;
+        gameActionObj.RaiseNoArgs += Raise;
     }
     private void Raise()
     {
