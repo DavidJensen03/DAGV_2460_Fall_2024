@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterSideScroller : MonoBehaviour
 {
+    
     public float moveSpeed = 5f;
     public float jumpForce = 4f;
     public float gravity = -9.81f;

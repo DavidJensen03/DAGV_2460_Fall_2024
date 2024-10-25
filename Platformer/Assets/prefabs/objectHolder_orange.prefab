@@ -4842,6 +4842,7 @@ GameObject:
   - component: {fileID: 5666131771841069593}
   - component: {fileID: 1042599732124128268}
   - component: {fileID: 7743441369868765467}
+  - component: {fileID: 6898705316418723709}
   m_Layer: 0
   m_Name: objectHolder_orange
   m_TagString: Untagged
@@ -4924,33 +4925,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb13ed8e7f02fe438a7e8d6deffab4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedEvent:
+  TriggerEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
-        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4496233713772482119}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5666131771841069593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5022,6 +4999,27 @@ MonoBehaviour:
           m_StringArgument: setEating
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &6898705316418723709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6435494169106918457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8130966867008755755
 GameObject:
   m_ObjectHideFlags: 0

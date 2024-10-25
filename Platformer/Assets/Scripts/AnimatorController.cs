@@ -6,9 +6,15 @@ public class AnimatorController : MonoBehaviour
     private readonly int idle = Animator.StringToHash("idle");
     private readonly int walk = Animator.StringToHash("walk");
 
+    public bool AllowedToWalk = true; 
     public bool pointingleft = true;
     public GameObject charecter;
     public Vector3 pointingDirection;
+
+    public void EnableOrDisableAllowedToWalk(bool enableOrDisable)
+    {
+        AllowedToWalk = enableOrDisable;
+    }
 
     private void Start()
     {
@@ -17,17 +23,20 @@ public class AnimatorController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (AllowedToWalk)
         {
-            animator.ResetTrigger(idle);
-            animator.SetTrigger(walk);
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                animator.ResetTrigger(idle);
+                animator.SetTrigger(walk);
+            }
+            else if ((Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)) && (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
+            {
+                animator.ResetTrigger(walk);
+                animator.SetTrigger(idle);
+            }
+            directionMover();
         }
-        else if ((Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)) && (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
-        {
-            animator.ResetTrigger(walk);
-            animator.SetTrigger(idle);
-        }
-        directionMover();
     }
 
     private void directionMover()

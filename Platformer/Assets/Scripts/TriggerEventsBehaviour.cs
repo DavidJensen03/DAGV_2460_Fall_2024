@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(BoxCollider))]
 public class TriggerEventsBehaviour : MonoBehaviour
 {
-    public UnityEvent collectedEvent;
+    public UnityEvent TriggerEvent;
     private void OnTriggerEnter (Collider other)
     {
-        collectedEvent.Invoke ();
+        TriggerEvent.Invoke ();
     }
 }
