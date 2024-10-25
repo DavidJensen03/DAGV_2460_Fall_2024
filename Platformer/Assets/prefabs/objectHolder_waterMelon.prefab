@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5559063502552173696}
   - component: {fileID: 4617974186964859042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterMelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 1959531103088033611}
   - component: {fileID: 8943771450392373428}
   - component: {fileID: 7670879834309268723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: waterMelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6726674903183816187}
   - component: {fileID: 4970739242826601085}
   - component: {fileID: 4977694891185117141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: watermelon_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 1673273697082057305}
   - component: {fileID: 3798291843663412208}
   - component: {fileID: 7815022385504020681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: objectHolder_waterMelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5040,7 +5040,19 @@ MonoBehaviour:
   holdTime: 0.1
   onCallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   awakeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5083,33 +5095,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb13ed8e7f02fe438a7e8d6deffab4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedEvent:
+  TriggerEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
-        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4970739242826601085}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1673273697082057305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5138,6 +5126,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  respondLateEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 0.1
 --- !u!114 &3798291843663412208
 MonoBehaviour:
   m_ObjectHideFlags: 0

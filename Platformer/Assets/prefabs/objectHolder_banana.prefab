@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3643792197447720097}
   - component: {fileID: 6089413103011063998}
   - component: {fileID: 572513742239972732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8746075496976701908}
   - component: {fileID: 3183324688750897567}
   - component: {fileID: 5101366365759767898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: objectHolder_banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,19 @@ MonoBehaviour:
   holdTime: 0.1
   onCallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   awakeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -201,24 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb13ed8e7f02fe438a7e8d6deffab4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedEvent:
+  TriggerEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7912248044719115521}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -256,6 +256,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  respondLateEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 0.1
 --- !u!114 &3183324688750897567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5085738804624652194}
   - component: {fileID: 7777746812285006507}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +368,7 @@ GameObject:
   - component: {fileID: 6669637966650954580}
   - component: {fileID: 7912248044719115521}
   - component: {fileID: 2767867815673703543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: banana_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

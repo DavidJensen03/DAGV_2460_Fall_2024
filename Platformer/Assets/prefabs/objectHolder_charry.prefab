@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6116225794018390336}
   - component: {fileID: 8666023632840531589}
   - component: {fileID: 554630705864197687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cherry_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4843,7 +4843,7 @@ GameObject:
   - component: {fileID: 4111476518064637885}
   - component: {fileID: 2759687279808582241}
   - component: {fileID: 7662803294111378343}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: objectHolder_charry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4903,7 +4903,19 @@ MonoBehaviour:
   holdTime: 0.1
   onCallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   awakeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4946,28 +4958,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb13ed8e7f02fe438a7e8d6deffab4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedEvent:
+  TriggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
-        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8666023632840531589}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5001,6 +5001,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  respondLateEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 0.1
 --- !u!114 &2759687279808582241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5054,7 +5058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2550997799394873251}
   - component: {fileID: 1326591726012525350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: charry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5109,7 +5113,7 @@ GameObject:
   - component: {fileID: 6283508163796921209}
   - component: {fileID: 7808504986309608325}
   - component: {fileID: 2642055581123312194}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: charry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
