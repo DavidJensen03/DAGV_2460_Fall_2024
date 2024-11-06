@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class intData : ScriptableObject
 {
     public int value;
-    
+
 
     public void setValue(int num)
     {

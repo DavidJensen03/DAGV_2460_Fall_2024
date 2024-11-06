@@ -4977,7 +4977,6 @@ GameObject:
   - component: {fileID: 9176553786940396490}
   - component: {fileID: 8118572392221832009}
   - component: {fileID: 1413899093086583617}
-  - component: {fileID: 4617692966245749433}
   - component: {fileID: 7817621318446980566}
   - component: {fileID: 56331078034545259}
   m_Layer: 3
@@ -5040,19 +5039,7 @@ MonoBehaviour:
   holdTime: 0.1
   onCallEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   awakeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5097,39 +5084,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerEvent:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4617692966245749433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7285188713445928009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2c3ecc1ec8aad64cad30b7911d82174, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameActionObj: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
-  onRaiseEvent:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 82a85c51793e1094ea14eb163d1d646a, type: 2}
-        m_TargetAssemblyTypeName: intData, Assembly-CSharp
-        m_MethodName: updateValue
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: 5a046edc7d1733f48a877e62627dbacd, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  respondLateEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  holdTime: 0.1
 --- !u!114 &7817621318446980566
 MonoBehaviour:
   m_ObjectHideFlags: 0
