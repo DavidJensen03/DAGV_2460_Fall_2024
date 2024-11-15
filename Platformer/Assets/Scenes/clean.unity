@@ -1268,6 +1268,14 @@ PrefabInstance:
       propertyPath: AllowedToWalk
       value: 
       objectReference: {fileID: 11400000, guid: 549d0c3395a41db44a0440afa7237832, type: 2}
+    - target: {fileID: 4256422181002443042, guid: 42cf3268d77b3ee40b9f1e8dffd11a05, type: 3}
+      propertyPath: animationName1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256422181002443042, guid: 42cf3268d77b3ee40b9f1e8dffd11a05, type: 3}
+      propertyPath: animationName2
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4501797698601165638, guid: 42cf3268d77b3ee40b9f1e8dffd11a05, type: 3}
       propertyPath: m_Enabled
       value: 1

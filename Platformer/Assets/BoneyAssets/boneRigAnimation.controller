@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1102 &-2048779324539531984
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: test
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 481885912755090174, guid: fad57c6bfb265e54b98f7eb519e4f6a0, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1107 &-820705990686015537
 AnimatorStateMachine:
   serializedVersion: 6
@@ -13,8 +39,11 @@ AnimatorStateMachine:
     m_State: {fileID: 156604573306938899}
     m_Position: {x: 470, y: 40, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 7560197892943628333}
-    m_Position: {x: 430, y: -60, z: 0}
+    m_State: {fileID: 8648053569635646566}
+    m_Position: {x: 457.6518, y: -66.43318, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -2048779324539531984}
+    m_Position: {x: 506.13123, y: 192.06837, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -24,7 +53,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 156604573306938899}
+  m_DefaultState: {fileID: 8648053569635646566}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -73,14 +102,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7560197892943628333
+--- !u!1102 &8648053569635646566
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: limp
+  m_Name: deathtest
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -93,7 +122,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -2250130753826661835, guid: d5b14313847c90f40b3b9aec4339a892, type: 3}
+  m_Motion: {fileID: 3715235425676033068, guid: b4a4fabf83561054192de3af1bf5282e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

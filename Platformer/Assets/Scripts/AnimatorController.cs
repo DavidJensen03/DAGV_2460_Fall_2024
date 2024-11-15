@@ -3,8 +3,9 @@ using UnityEngine;
 public class AnimatorController : MonoBehaviour
 {
     public Animator animator;
-    private readonly int idle = Animator.StringToHash("idle");
-    private readonly int walk = Animator.StringToHash("walk");
+
+    private int idle = Animator.StringToHash("idle");
+    private int walk = Animator.StringToHash("walk");
 
     public BoolData AllowedToWalk;
     public bool pointingleft = true;
@@ -14,9 +15,8 @@ public class AnimatorController : MonoBehaviour
     private void Start()
     {
         pointingDirection = new Vector3(charecter.transform.eulerAngles.x, charecter.transform.eulerAngles.y + 180, charecter.transform.eulerAngles.z);
-  
-    }
 
+    }
     private void Update()
     {
 
