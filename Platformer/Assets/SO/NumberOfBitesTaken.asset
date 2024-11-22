@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ae242b67272924995ca49de0f10143, type: 3}
   m_Name: NumberOfBitesTaken
   m_EditorClassIdentifier: 
-  value: 0
+  value: 4

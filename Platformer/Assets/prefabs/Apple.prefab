@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2610276549817359806}
   - component: {fileID: 4043213283755587301}
   - component: {fileID: 2226631063852407019}
+  - component: {fileID: 6154492710627132212}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -199,6 +200,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdaf82237275aea458a4d9feaa84cf60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6154492710627132212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026615481258964782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c814e1d6b421f479eaa8719f787c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 3, z: 0}
+  moveDuration: 2
+  CameraPos: {fileID: 11400000, guid: 7da317c4304c95f4da8c571a32a4d603, type: 2}
+  playerPos: {fileID: 11400000, guid: 37474d39c096ab84f80abfdc4d18318f, type: 2}
 --- !u!1 &5523176759164165862
 GameObject:
   m_ObjectHideFlags: 0
